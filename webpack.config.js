@@ -18,6 +18,17 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates style nodes from JS strings
+          "style-loader",
+          // CSS to CommonJS
+          "css-loader",
+          // SCSS to CSS
+          "sass-loader",
+        ],
+      },
     ],
   },
   output: {
